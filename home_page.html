@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>cofarmer </title>
+    <link rel="stylesheet" href="home_page.css">
+</head>
+<body>
+    <div class="topnav">
+            <button type="submit"><a href="divider_for_login.html">Login</a> </button>
+            <button type="submit"><a href="divider1_for_signup.html">Sign UP</a></button>
+      </div>
+    <div class="slogan">
+      <h2>COFARMER</h2><br>
+        <h1>Nurturing the Earth, 
+            <br>Sustaining Humanit</h1>
+            <h4>Farmers,<br> the backbone of our communities, <br>work tirelessly to grow the food we eat. <br>They're the ones who plant seeds,<br> care for crops, and bring fresh produce to our tables. <br> Their hard work and dedication help keep us all nourished and healthy.</h4>
+            <div class="button">
+              <form action="divider1_for_signup.html">
+            <input type="text" placeholder="Enter Email Address ">
+            <input type="submit">  
+          </form>     
+         </div>
+        </div>
+        <div class="about">
+            <h1><b>ABOUT</b></h1>
+            <div class="comments">
+            <q>An application, that serves as a platform for movement of agricultural products from the farms directly to the consumers or retailers.</q>
+                <p class="author">- CoFarmer</p>
+        </div>
+            <div class="comments">
+            <q>This mobile and web application provides privilege for both farmers and consumers or retailers to buy and sell the required farm products without the involvement of a middleman at its right profitable price.</q>
+                <p class="author">- CoFarmer</p>
+        </div>
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+          </div>
+          <div class="dot-container">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+          </div>
+    <script>
+    var slideIndex = 1;
+    showSlides(slideIndex);
+    function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+   function currentSlide(n) {
+   showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("comments");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {
+    slideIndex = 1
+    }
+    if (n < 1) {
+    slideIndex = slides.length
+}
+    for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+    }
+    for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+    }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+}
+          </script>
+
+    
+</body>
+</html>

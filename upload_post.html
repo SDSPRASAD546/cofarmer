@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>File Upload</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+        }
+
+        h1 {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        form {
+            background-color: #fff;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            padding: 20px;
+            width: 550px;
+            margin: 0 auto;
+            padding: 5%;
+            height: 300px;
+
+        }
+
+        label {
+            display: block;
+            font-weight: bold;
+            margin: 2%;
+            margin-top:3% ;
+        }
+
+        input[type="file"],
+        input[type="text"] {
+            display: block;
+
+            width: 100%;
+            padding: 8px;
+            border: 1px solid #ccc;
+            border-radius: 3px;
+        }
+
+        input[type="submit"] {
+            background-color: #0074d9;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            padding: 10px 20px;
+            cursor: pointer;
+            margin-top: 10px;
+            float: right;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #0056b3;
+            
+        }
+    </style>
+</head>
+<body>
+    <h1>UPLOAD CROP HERE!</h1>
+    <form action="posts.php" method="post" enctype="multipart/form-data">
+        <label for="crop">Type of Crop:</label>
+        <input type="text" id="crop" name="crop">
+        <label for="quantity">Quantity:</label>
+        <input type="text" id="quantity" name="quantity">
+        <label for="files">Select crop photo:</label>
+        <input type="file" id="files" name="photo" >
+        
+        <input type="submit" value="Upload Files">
+    </form>
+</body>
+</html>

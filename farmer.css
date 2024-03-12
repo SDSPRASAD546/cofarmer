@@ -1,0 +1,101 @@
+/* Reset default margin and padding */
+body, h1, h2, p {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+}
+
+.main {
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.cover img {
+    display: block;
+    margin: 0 auto;
+    max-width: 100%;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    width: 300px;
+    height: 300px;
+}
+
+.post {
+    margin-top: 20px;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.post p {
+    font-size: 18px;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.post hr {
+    border: 1px solid #ccc;
+    margin: 20px 0;
+}
+
+h2 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+/* Style the image in the post */
+.post img {
+    display: block;
+    max-width: 100%;
+    margin-top: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+/* You can add more specific styles as needed */
+
+h3{
+    margin:0;
+}
+.post_button{
+    margin: 0;
+    display: flex;
+    
+    
+}
+button{
+   margin-left: 60%;
+   width: 100px;
+   height: 40px;
+   background-color:cadetblue;
+   color: black;
+   border: none;
+   border-radius:4px ;
+
+}
+button a{
+    text-decoration: none;
+    color: white;
+    font-size: medium;
+}

@@ -1,0 +1,158 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+.slogan{
+background-image: url(bg3.jpg);
+background-attachment: absolute;
+background-size: cover;
+background-repeat: no-repeat;
+height: 600px;
+
+}
+
+.strip{
+    height: 30px;
+    background-color: black;
+    width: 100%;
+    overflow: visible;
+    color: white;
+    text-align: center;
+
+}
+   
+.slogan h1{
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 100px;
+    font-size: 50px;
+    margin-left: 70px;
+    position: absolute;
+}
+.slogan h4{
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 250px;
+    margin-left: 70px;
+    position: absolute;
+}
+.button{
+    margin-top: 450px;
+    margin-left: 50px;
+    position: absolute;
+    
+}
+input[type='text']{
+    height: 40px;
+    width: 250px;
+    font-size:large;
+    padding: 10px;
+    border: 3px solid green;
+    border-radius: 30px;
+    margin-left:30px;;
+    
+}
+input[type='submit']{
+
+height: 50px;
+width: 120px;
+background-color: skyblue;
+border: none;
+border-radius: 10px;
+font-size: large;
+margin: 20px;
+}
+input[type='submit']:hover{
+
+    height: 50px;
+    width: 120px;
+    background-color:dodgerblue;
+    border: none;
+    border-radius: 10px;
+    
+    }
+     button {
+        float: right;
+        padding: 6px 10px;
+        margin-top: 18px;
+        margin-right: 16px;
+        background-color: transparent;
+        color: white;
+        font-size: 20px;
+        cursor: pointer;
+        border-radius: 15px;
+        border: 3px solid white;
+       
+      }
+      button:hover{
+        background-color: darkcyan;
+      }
+     .about{
+                text-align: center;
+                position: relative;
+                padding-top: 35px;
+        
+      }
+      .about h1{
+        border: 2px solid darkcyan;
+        border-radius: 10px;
+        margin-left: 450px;
+        margin-right: 450px;
+       
+      }
+      .comments{
+        padding: 80px;
+        text-align: center;
+      }
+      .prev, .next {
+        cursor: pointer;
+        position: absolute;
+        top: 50%;
+        width: auto;
+        margin-top: -30px;
+        padding: 16px;
+        color: #888;
+        font-weight: bold;
+        font-size: 20px;
+        border-radius: 0 3px 3px 0;
+      }
+      .next {
+        position: absolute;
+        right: 0;
+        border-radius: 3px 0 0 3px;
+      }
+      .prev{
+        position: absolute;
+        left: 0;
+        border-radius: 3px 0 0 3px;
+      }
+      .prev:hover, .next:hover {
+        background-color:darkcyan;
+        color: white;  
+      }
+    .dot-container {
+    text-align: center;
+    padding: 20px;
+    background: #ddd;
+     }
+  .dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: darkcyan;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+  }
+  .active, .dot:hover {
+    background-color: whitesmoke;
+  }
+  q{
+    font-style: italic;
+    }
+    .author{
+        color: blue;
+    }
+button a{
+  text-decoration: none;
+  color: white;
+}

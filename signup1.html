@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Farmer sign up</title>
+    <link rel="stylesheet" href="signup.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet" />
+  </head>
+  <body>
+    <div class="main">
+      <img src="co farmer.jpg" >
+  </div>
+    <div class="min">
+      <form action="distributor.php" method="post" enctype="multipart/form-data">
+        <h2 class="first_title">Sign Up</h2>
+        <p class="first_sub_title" id="sub_title">create an account</p>
+        <hr />
+     
+        <div class="input">
+          <input type="text" placeholder="First Name" class="first_name" id="all" name="first_name" required />
+          <input type="text" placeholder="Sure Name" class="sure_name" id="all" name="sure_name" required />
+          <br />
+          <input type="email" placeholder="email address" id="all1" name="email" required />
+          <br />
+          <input type="password" placeholder="New password" id="all1" name="password" required />
+          <br />
+          <input type="number" placeholder="phone number" id="all1" name="phone_number" required />
+
+        </div>
+        <input type="text" placeholder="location" id="all1" name="location" required />
+        <br />
+        <label for="myfile">Select a file:</label>
+        <input type="file" id="myfile" name="image" accept="image">
+        <input type="submit" value="Signup" class="submit" />
+      </form>
+    </div>
+  </body>
+</html>
